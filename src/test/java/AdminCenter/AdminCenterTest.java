@@ -1,4 +1,4 @@
-package examples;
+package AdminCenter;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
@@ -6,11 +6,11 @@ import com.intuit.karate.Runner;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-class ExamplesTest {
+class AdminCenterTest {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:examples")
+        Results results = Runner.path("classpath:AdminCenter")
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
