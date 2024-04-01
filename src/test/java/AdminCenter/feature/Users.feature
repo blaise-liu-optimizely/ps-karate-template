@@ -4,9 +4,7 @@ Background:
     #* def accessToken = 'eyJraWQiOiJuUjhOM2UwbUtxdk93enp4NHdNeTRRMlZDRTRDUFdybzdQdDdNekxraFJvIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlAxMUoyeXpuTzhnVmVXYnNxRVpwWXNfWkhIdmZLZjhjdFVLbW54dEVkRzQub2FyenMwcXBsRkJwZTFzdmUxZDYiLCJpc3MiOiJodHRwczovL3ByZXAubG9naW4ub3B0aW1pemVseS5jb20vb2F1dGgyL2RlZmF1bHQiLCJhdWQiOiJhcGk6Ly9kZWZhdWx0Iiwic3ViIjoiamlhbnFpbmcubGl1QG9wdGltaXplbHkuY29tIiwiaWF0IjoxNzExOTcwODM5LCJleHAiOjE3MTE5NzQ0MzksImNpZCI6IjBvYTFhdXBjc3JtOXJUblAxMGg4IiwidWlkIjoiMDB1NzNoeG1jc0dNVVQ2M2gxZDciLCJzY3AiOlsicHJvZmlsZSIsImlkeF9pbnN0YW5jZXBlcm1pc3Npb25zIiwib2ZmbGluZV9hY2Nlc3MiLCJlbWFpbCIsIm9wZW5pZCJdLCJhdXRoX3RpbWUiOjE3MTEzNzg3MTcsImluc3RhbmNlX3Blcm1pc3Npb25zIjoiaHR0cHM6Ly9wcmVwLnVzZXJtZ210LWFwaS5vcHRpbWl6ZWx5LmNvbS9hcGkvdXNlcnMvamlhbnFpbmcubGl1QG9wdGltaXplbHkuY29tL2luc3RhbmNlcGVybWlzc2lvbnMifQ.bZo_rgcW5JmAI4EWL1pECFWXl703_jie8PEEksKVz1zE7GI0-3vfQMvVVIBNKUxWihEpbxaA5zKOulTFaQTbrM_kEMf4DWj54JMxcY_HFqNknswaZgbNs3cLURXd3mjr6fkMvlAZJoHcV_WFdI6wYffy762XgGHCzlUcIAngn137ManQ2eFmcJ0fmMgSlfP21emVD04F373YC87YL2-RhEF2M-lftji8lojEb_MXKtnlYxrhWAu7-tWvxEmidBswgP7bx6X2etwMzcxjvFKsNbHut5kseiGQQiCBaGLGiTrU23sz-6Ar-1IGQ56SqLF9eLK8ALBZAZSped7vBlDMdw'
     #* header Authorization = 'Bearer ' + accessToken
     * def tokenResponse = call read('classpath:helpers/CreateAuthToken.feature') 
-    * def accessToken = tokenResponse.accessToken
-    # * header Authorization = 'Bearer ' + accessToken
-    # * print 'header:', header
+    * def accessToken = tokenResponse.accessToken    
     * print 'Token Response:', karate.toJson(tokenResponse)
 
     * print 'Print accessToken: ' + accessToken

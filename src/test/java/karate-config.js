@@ -10,6 +10,7 @@ function fn() {
       'admincenter_host':'http://127.0.0.1:7262',
       'webhook_host':'http://127.0.0.1:7247'
     },
+    scimApiKey: 'I1E2IYkEhStAYWHxmzgmaAZ2xULDVzJx0YILPsjTgyUaqg1h',
     login:{
       domain:'https://prep.login.optimizely.com',
       username:'jianqing.liu+lt2@optimizely.com',
